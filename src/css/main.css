@@ -1,0 +1,185 @@
+.tableHeading {
+    padding-left: 10px;
+  }
+  .table {
+    margin-left: 350px;
+    margin-right: 350px;
+  }
+  .navbar a {
+    text-decoration: none;
+    margin-left: 16px;
+    padding: 6px;
+  }
+  .navbar .links {
+    margin-left: auto;
+  }
+  .secondary img {
+    padding-top: 40px;
+    padding-left: 40px;
+    height: 800px;
+    width: 600px;
+  }
+  .text1 {
+    text-align: center;
+  }
+  
+  h1 {
+    padding-top: 10px;
+    padding-left: 140px;
+  }
+  h4 {
+    padding-left: 70px;
+  
+    padding-bottom: 0px;
+  }
+  p {
+    text-align: justify;
+    padding-left: 80px;
+  }
+  header {
+    height: 40px;
+    background-color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+  header a {
+    margin: 0 15px;
+  }
+  .tableHeading {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+  }
+  .addin input {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 30px;
+  }
+  .addin button {
+    margin-left: 40px;
+  }
+  
+  .image {
+    height: 300px;
+    width: 300px;
+    margin-left: 530px;
+    margin-top: 200px;
+  }
+  .column {
+    float: left;
+    width: 50%;
+  }
+  
+  /****container****/
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    column-gap: 50px;
+  }
+  
+  /*****image*****/
+  
+  .imgs {
+    height: 600px;
+    width: 500px;
+    margin-bottom: 50px;
+  }
+  
+  .texts {
+    max-width: 425px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+  }
+  
+  /* media queries */
+  
+  @media screen and (max-width: 992px) {
+    .texts {
+      max-width: 325px;
+      padding-right: 40px;
+    }
+    .imgs {
+      padding-left: 30px;
+      margin-bottom: 50px;
+    }
+  }
+  
+  @media screen and (max-width: 760px) {
+    .texts {
+      max-width: 325px;
+      padding-right: 40px;
+    }
+    p {
+      font-size: 10px;
+    }
+    h1 {
+      letter-spacing: 1.2px;
+  
+      font-size: 22px;
+    }
+    h4 {
+      letter-spacing: 1.1px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-top: 16px;
+    }
+  
+    .imgs {
+      height: 325px;
+      padding-left: 30px;
+      margin-bottom: 50px;
+    }
+  }
+  
+  @media screen and (max-width: 530px) {
+    .container {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .imgs {
+      height: 275px;
+      width: 270px;
+      margin-bottom: 50px;
+      margin-top: 30px;
+      margin-left: 30px;
+    }
+  }
+  @media screen and (min-width: 480px) {
+    .secondary img {
+      padding-top: 40px;
+      height: 400px;
+      width: 500px;
+      padding-right: 20px;
+    }
+  
+    p {
+      text-align: justify;
+      padding-left: 40px;
+      padding-right: 30px;
+    }
+  }
+  @media screen and (min-width: 576px) {
+    .img {
+      padding-top: 40px;
+      height: 530px;
+      width: 500px;
+      padding-right: px;
+    }
+  
+    .secondarytext p {
+      text-align: justify;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+  
