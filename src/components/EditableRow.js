@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const EditableRow = ({ editFormData, handleEditFormChange }) => {
   return (
@@ -10,8 +10,7 @@ const EditableRow = ({ editFormData, handleEditFormChange }) => {
           required="required"
           placeholder="Enter Name"
           value={editFormData.name}
-          onChange={handleEditFormChange}
-        ></input>
+          onChange={handleEditFormChange}></input>
       </td>
       <td>
         <input
@@ -20,8 +19,7 @@ const EditableRow = ({ editFormData, handleEditFormChange }) => {
           required="required"
           placeholder="Enter Email"
           value={editFormData.email}
-          onChange={handleEditFormChange}
-        ></input>
+          onChange={handleEditFormChange}></input>
       </td>
       <td>
         <input
@@ -30,8 +28,7 @@ const EditableRow = ({ editFormData, handleEditFormChange }) => {
           required="required"
           placeholder="Enter Name"
           value={editFormData.phone}
-          onChange={handleEditFormChange}
-        ></input>
+          onChange={handleEditFormChange}></input>
       </td>
       <td>
         <button type="submit">Update</button>

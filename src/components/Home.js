@@ -8,7 +8,7 @@ const Home = () => {
         <img
           src="https://www.w3schools.com/w3images/hamburger.jpg"
           alt="..."
-          height={'450px'}
+          height={'100%'}
           width={'100%'}></img>
       </div>
       <div>
@@ -16,7 +16,8 @@ const Home = () => {
           <img
             src="https://www.w3schools.com/w3images/tablesetting2.jpg"
             alt="abtcat_img"
-            className="imgs"
+            height={'50%'}
+            width={'50%'}
           />
           <div className="texts">
             <h1>About Catering</h1>

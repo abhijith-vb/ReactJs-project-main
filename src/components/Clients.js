@@ -90,7 +90,7 @@ const Client = () => {
     setEditformData(formValues);
   };
 
-  const handleDeleteClick =(contactId) => {
+  const handleDeleteClick = (contactId) => {
     const newContacts = [...data];
     const index = data.findIndex((user) => user.id === contactId);
     newContacts.splice(index, 1);
@@ -129,7 +129,7 @@ const Client = () => {
       {isLoading && (
         <div>
           <img
-            className="image"
+            className="image center"
             src="https://icon-library.com/images/loading-icon-transparent-background/loading-icon-transparent-background-12.jpg"
             alt="images"></img>
         </div>
@@ -139,10 +139,10 @@ const Client = () => {
         <h1 className="tableHeading" id="title">
           Table of data retrieved
         </h1>
-        </div>
-        <div>
+      </div>
+      <div>
         <form onSubmit={handleEditFormSubmit}>
-          <table className=" table " id="users" border="2">
+          <table className=" table " id="users" border="3">
             <thead>
               <tr>
                 <th>Name</th>
@@ -156,7 +156,7 @@ const Client = () => {
         </form>
       </div>
 
-      <div className="container addin">
+      <div className="newinput">
         <form onSubmit={handleAddFormSubmit}>
           <input
             type="text"
@@ -176,7 +176,11 @@ const Client = () => {
             required="required"
             placeholder="enter phoneNo"
             onChange={handleAddFormChange}></input>
-          <button type="submit">Add</button>
+          <div className="addbutton">
+            <button type="submit" class="btn">
+              Add
+            </button>
+          </div>
         </form>
       </div>
     </>
