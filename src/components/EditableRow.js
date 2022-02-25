@@ -9,6 +9,7 @@ const EditableRow = ({ editFormData, handleEditFormChange }) => {
           name="name"
           required="required"
           placeholder="Enter Name"
+          className="editableinput"
           value={editFormData.name}
           onChange={handleEditFormChange}></input>
       </td>
@@ -18,6 +19,7 @@ const EditableRow = ({ editFormData, handleEditFormChange }) => {
           name="email"
           required="required"
           placeholder="Enter Email"
+          className="editableinput"
           value={editFormData.email}
           onChange={handleEditFormChange}></input>
       </td>
@@ -27,11 +29,14 @@ const EditableRow = ({ editFormData, handleEditFormChange }) => {
           name="phone"
           required="required"
           placeholder="Enter Name"
+          className="editableinput"
           value={editFormData.phone}
           onChange={handleEditFormChange}></input>
       </td>
       <td>
-        <button type="submit">Update</button>
+        <button type="submit" className="updatebutton">
+          Update
+        </button>
       </td>
     </tr>
   );

@@ -98,8 +98,8 @@ const Client = () => {
   };
 
   useEffect(() => {
+    axios.get(url).then((json) => setData(json.data));
     setTimeout(() => {
-      axios.get(url).then((json) => setData(json.data));
       setLoading(false); //getting data using axios
     }, 1000);
   }, []);
@@ -142,7 +142,7 @@ const Client = () => {
       </div>
       <div>
         <form onSubmit={handleEditFormSubmit}>
-          <table className=" table " id="users" border="3">
+          <table className=" table " id="users">
             <thead>
               <tr>
                 <th>Name</th>
@@ -158,26 +158,35 @@ const Client = () => {
 
       <div className="newinput">
         <form onSubmit={handleAddFormSubmit}>
-          <input
-            type="text"
-            name="name"
-            required="required"
-            placeholder="enter name"
-            onChange={handleAddFormChange}></input>
-          <input
-            type="text"
-            name="email"
-            required="required"
-            placeholder="enter email"
-            onChange={handleAddFormChange}></input>
-          <input
-            type="text"
-            name="phone"
-            required="required"
-            placeholder="enter phoneNo"
-            onChange={handleAddFormChange}></input>
+          <div>
+            <input
+              type="text"
+              name="name"
+              required="required"
+              placeholder="Enter Name...."
+              className="newinputfield"
+              onChange={handleAddFormChange}></input>
+          </div>
+          <div>
+            <input
+              type="text"
+              name="email"
+              required="required"
+              placeholder="Enter Email...."
+              className="newinputfield"
+              onChange={handleAddFormChange}></input>
+          </div>
+          <div>
+            <input
+              type="text"
+              name="phone"
+              required="required"
+              placeholder="Enter PhoneNo...."
+              className="newinputfield"
+              onChange={handleAddFormChange}></input>
+          </div>
           <div className="addbutton">
-            <button type="submit" class="btn">
+            <button type="submit" className="btn">
               Add
             </button>
           </div>

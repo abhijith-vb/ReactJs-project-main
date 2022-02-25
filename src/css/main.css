@@ -1,15 +1,32 @@
 /***** home page start *****/
 
+/***** home primary image div *****/
+
+.firstimage {
+  max-height: 630px;
+  width: 100%;
+}
+
 /***** home primary image *****/
 
 .firstimage img {
   object-fit: cover;
+  max-height: 514px;
+  width: 100%;
+}
+
+/***** home secondary image div *****/
+
+.imagediv {
+  max-height: 570px;
 }
 
 /***** home secondary image *****/
 
 .container img {
   object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 /***** style for home text div *****/
@@ -17,6 +34,8 @@
 .texts {
   justify-content: center;
   padding-left: 50px;
+  margin-left: 40px;
+  width: 50%;
 }
 
 /***** style for home  first paragraph *****/
@@ -56,6 +75,8 @@ header a {
   column-gap: 20px;
 }
 
+/***** text div *****/
+
 .texts {
   max-width: 425px;
   display: flex;
@@ -82,19 +103,96 @@ header a {
 .table {
   margin-left: auto;
   margin-right: auto;
+  border-collapse: collapse;
+  border: 2px solid #ab8cf3;
 }
 
 /***** styling thead data *****/
 
 .table thead {
-  background: rgb(101, 101, 179);
+  background: #9b73f7;
   color: white;
+  border: 1px solid grey;
 }
 
+/***** edit delete button styles *****/
+
+.editdelete {
+  cursor: pointer;
+  background-color: rgb(104, 195, 248);
+}
+
+/***** update button style *****/
+
+.updatebutton {
+  cursor: pointer;
+  background-color: rgb(104, 195, 248);
+}
+
+/***** editable input style *****/
+
+.editableinput {
+  background-color: rgb(204, 200, 200);
+}
+
+/***** editable input hover *****/
+
+.editableinput:hover {
+  background-color: #9b73f7;
+}
+
+/***** hover effect on update button *****/
+
+.updatebutton:hover {
+  background-color: #9b73f7;
+}
+
+/***** hover effect on edit delete button *****/
+
+.editdelete:hover {
+  background-color: #9b73f7;
+}
+
+/***** hover effect on thead *****/
+
+thead :hover {
+  color: white;
+  background-color: rgb(228, 133, 95);
+}
+
+/***** hover effect on tbody elements *****/
+
+tbody :hover {
+  color: white;
+  background-color: rgb(224, 157, 131);
+}
+
+/***** th styles *****/
+
+th {
+  padding: 20px;
+  font-size: 15px;
+  color: rgb(224, 212, 212);
+}
+
+/***** td styles *****/
+
+td {
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/***** tr styles *****/
+
+tr {
+  border: 1px solid #ab8cf3;
+  text-align: justify;
+  align-items: center;
+}
 /***** styling the thead data *****/
 
 .table tbody {
-  background: rgb(91, 158, 219);
+  background: #5594f8;
   color: rgb(10, 9, 9);
   font-size: medium;
 }
@@ -109,40 +207,57 @@ header a {
 /***** new input div *****/
 
 .newinput {
-  margin: auto;
-  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+
   padding: 10px;
 }
 
 /***** new input textbox *****/
 
-.newinput input {
-  padding-left: 20px;
-  background: rgb(172, 168, 230);
-  color: black;
-  position: relative;
+.newinputfield {
   display: block;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-top: 20px;
+  border-radius: 4px 4px;
+  box-sizing: border-box;
+}
+
+/***** add button ****/
+
+.btn {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  background-color: #5594f8;
+  padding: 11px;
+  margin-bottom: 30px;
+}
+
+/***** add button hover *****/
+
+.btn:hover {
+  background-color: rgb(109, 243, 109);
+  color: black;
+  cursor: pointer;
 }
 
 /***** placeholder styling *****/
 
 ::placeholder {
-  color: red;
+  color: gray;
   opacity: 1.5;
+  text-align: center;
 }
 /***** button div centered *****/
 
 .addbutton {
   text-align: center;
   padding-top: 20px;
-}
-
-/***** button styling *****/
-
-.addbutton button {
-  background: brown;
-  color: white;
 }
 
 /* media queries */

@@ -1,24 +1,22 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
-//import "./Home.css";
+import '../css/main.css';
 const Home = () => {
   return (
     <>
       <div className="firstimage">
-        <img
-          src="https://www.w3schools.com/w3images/hamburger.jpg"
-          alt="..."
-          height={'100%'}
-          width={'100%'}></img>
+        <img src="https://www.w3schools.com/w3images/hamburger.jpg" alt="..."></img>
       </div>
       <div>
         <div className="container">
-          <img
-            src="https://www.w3schools.com/w3images/tablesetting2.jpg"
-            alt="abtcat_img"
-            height={'50%'}
-            width={'50%'}
-          />
+          <div className="imagediv">
+            <img
+              src="https://www.w3schools.com/w3images/tablesetting2.jpg"
+              alt="abtcat_img"
+              height={'50%'}
+              width={'50%'}
+            />
+          </div>
           <div className="texts">
             <h1>About Catering</h1>
             <h4>Tradition since 1889</h4>

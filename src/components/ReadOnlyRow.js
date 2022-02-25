@@ -8,10 +8,13 @@ const ReadOnlyRow = ({ user, handleEditClick, handleDeleteClick, userTypes }) =>
       <td>{user.phone}</td>
       {userTypes === 'ADMIN-USER' && (
         <td>
-          <button type="button" onClick={(event) => handleEditClick(event, user)}>
+          <button
+            type="button"
+            className="editdelete"
+            onClick={(event) => handleEditClick(event, user)}>
             Edit
           </button>
-          <button type="button" onClick={() => handleDeleteClick(user.id)}>
+          <button type="button" className="editdelete" onClick={() => handleDeleteClick(user.id)}>
             Delete
           </button>
         </td>
