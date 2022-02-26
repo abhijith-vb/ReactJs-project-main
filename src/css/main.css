@@ -117,9 +117,24 @@ header a {
 
 /***** edit delete button styles *****/
 
-.editdelete {
+.editable {
   cursor: pointer;
-  background-color: rgb(104, 195, 248);
+  background-color: rgb(217, 248, 104);
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  border-radius: 4px 4px;
+  border: 1px solid gray;
+}
+
+.deletable {
+  cursor: pointer;
+  background-color: rgb(243, 76, 76);
+  padding: 7px;
+  border-radius: 4px 4px;
+  border: 1px solid gray;
+  margin-left: 5px;
 }
 
 /***** update button style *****/
@@ -127,12 +142,18 @@ header a {
 .updatebutton {
   cursor: pointer;
   background-color: rgb(104, 195, 248);
+  padding: 7px;
+  border-radius: 4px 4px;
+  border: 1px solid gray;
 }
 
 /***** editable input style *****/
 
 .editableinput {
   background-color: rgb(204, 200, 200);
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 4px 4px;
 }
 
 /***** editable input hover *****/
@@ -144,13 +165,17 @@ header a {
 /***** hover effect on update button *****/
 
 .updatebutton:hover {
-  background-color: #9b73f7;
+  background-color: #4005c9;
 }
 
 /***** hover effect on edit delete button *****/
 
-.editdelete:hover {
+.editable:hover {
   background-color: #9b73f7;
+}
+
+.deletable:hover {
+  background-color: #f11f10;
 }
 
 /***** hover effect on thead *****/
