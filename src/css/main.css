@@ -104,36 +104,36 @@ header a {
   margin-left: auto;
   margin-right: auto;
   border-collapse: collapse;
-  border: 2px solid #ab8cf3;
+  border: 2px solid transparent;
 }
 
 /***** styling thead data *****/
 
 .table thead {
-  background: #9b73f7;
+  background: #010102;
   color: white;
-  border: 1px solid grey;
+  border: 1px solid transparent;
 }
 
 /***** edit delete button styles *****/
 
 .editable {
   cursor: pointer;
-  background-color: rgb(217, 248, 104);
+  background-color: rgba(173, 173, 206, 0.596);
   padding-right: 15px;
   padding-left: 15px;
   padding-bottom: 7px;
   padding-top: 7px;
   border-radius: 4px 4px;
-  border: 1px solid gray;
+  border: none;
 }
 
 .deletable {
   cursor: pointer;
-  background-color: rgb(243, 76, 76);
+  background-color: rgba(173, 173, 206, 0.596);
   padding: 7px;
   border-radius: 4px 4px;
-  border: 1px solid gray;
+  border: none;
   margin-left: 5px;
 }
 
@@ -141,61 +141,66 @@ header a {
 
 .updatebutton {
   cursor: pointer;
-  background-color: rgb(104, 195, 248);
+  background-color: rgba(173, 173, 206, 0.596);
   padding: 7px;
   border-radius: 4px 4px;
-  border: 1px solid gray;
+  border: transparent;
 }
 
 /***** editable input style *****/
 
 .editableinput {
-  background-color: rgb(204, 200, 200);
+  background-color: transparent;
   padding-top: 7px;
   padding-bottom: 7px;
   border-radius: 4px 4px;
+  border: none;
+  border: 1px solid #ced4da;
 }
 
 /***** editable input hover *****/
 
 .editableinput:hover {
-  background-color: #9b73f7;
+  border-color: #5594f8;
 }
 
 /***** hover effect on update button *****/
 
 .updatebutton:hover {
-  background-color: #4005c9;
+  background-color: #60e78d;
+  color: white;
 }
 
 /***** hover effect on edit delete button *****/
 
 .editable:hover {
-  background-color: #9b73f7;
+  background-color: #2a73fa;
+  color: white;
 }
 
 .deletable:hover {
   background-color: #f11f10;
+  color: white;
 }
 
 /***** hover effect on thead *****/
 
-thead :hover {
+/*thead :hover {
   color: white;
   background-color: rgb(228, 133, 95);
-}
+}*/
 
 /***** hover effect on tbody elements *****/
 
-tbody :hover {
+/*tbody :hover {
   color: white;
   background-color: rgb(224, 157, 131);
-}
+}*/
 
 /***** th styles *****/
 
 th {
-  padding: 20px;
+  padding: 15px;
   font-size: 15px;
   color: rgb(224, 212, 212);
 }
@@ -203,21 +208,24 @@ th {
 /***** td styles *****/
 
 td {
-  padding: 20px;
+  padding: 15px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 /***** tr styles *****/
 
 tr {
-  border: 1px solid #ab8cf3;
+  border: 1px solid rgb(228, 225, 225);
   text-align: justify;
   align-items: center;
 }
 /***** styling the thead data *****/
 
+tr:nth-child(even) {
+  background-color: #e7e4e4;
+}
 .table tbody {
-  background: #5594f8;
+  background: transparent;
   color: rgb(10, 9, 9);
   font-size: medium;
 }
@@ -234,8 +242,13 @@ tr {
 .newinput {
   margin-left: auto;
   margin-right: auto;
-
+  width: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 2px solid transparent;
+  border-radius: 4px 4px;
   padding: 10px;
+  background-color: #e9ecef;
 }
 
 /***** new input textbox *****/
@@ -250,6 +263,12 @@ tr {
   margin-top: 20px;
   border-radius: 4px 4px;
   box-sizing: border-box;
+  box-shadow: none;
+  border: 1px solid #ced4da;
+}
+
+.newinputfield:hover {
+  border-color: #5594f8;
 }
 
 /***** add button ****/
@@ -261,13 +280,17 @@ tr {
   background-color: #5594f8;
   padding: 11px;
   margin-bottom: 30px;
+  box-shadow: none;
+  border: 1px solid transparent;
+  border-radius: 4px 4px;
+  color: white;
 }
 
 /***** add button hover *****/
 
 .btn:hover {
-  background-color: rgb(109, 243, 109);
-  color: black;
+  background-color: #4087f8;
+  color: white;
   cursor: pointer;
 }
 
