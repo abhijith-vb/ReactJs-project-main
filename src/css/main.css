@@ -162,6 +162,7 @@ header a {
 
 .editableinput:hover {
   border-color: #5594f8;
+  background: white;
 }
 
 /***** hover effect on update button *****/
