@@ -222,7 +222,7 @@ tr {
 /***** styling the thead data *****/
 
 tr:nth-child(even) {
-  background-color: #e7e4e4;
+  background-color: #e9ecef; /* #e7e4e4; */
 }
 .table tbody {
   background: transparent;
